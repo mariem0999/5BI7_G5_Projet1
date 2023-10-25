@@ -19,6 +19,8 @@ import tn.esprit.spring.entities.Skier;
 import java.time.LocalDate;
 import java.util.*;
 
+import static org.mockito.Mockito.when;
+
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
@@ -41,8 +43,8 @@ public class SkierServiceImpMock {
     };
     @Test
     public void retrieveSkier (){
-        Mockito.when(skierRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(skier));
-        Skier skier1 = skierServices.retrieveSkier(Long.valueOf("1L"));
+        when(skierRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(skier));
+        Skier  skier1 = skierServices.retrieveSkier(Long.valueOf("1L"));
         Assertions.assertNotNull(skier1);
     }
 }
