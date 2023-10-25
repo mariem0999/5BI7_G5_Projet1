@@ -12,7 +12,7 @@
 		<profile>
 			<id>properties</id>
 			<properties>
-				<maven.plugin.validation>VERBOSE</maven.plugin.validation>
+				<maven.plugin.validation>DEFAULT</maven.plugin.validation>
 			</properties>
 		</profile>
 	</profiles>
@@ -26,8 +26,10 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<maven.plugin.validation.ignore>true</maven.plugin.validation.ignore>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -73,23 +75,23 @@
 	</dependencies>
 
 	<build>
-
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>s
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.2.0</version> <!-- Use the latest version available -->
 			</plugin>
-
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.0</version> <!-- Use the latest version available -->
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version> <!-- Use the latest version available -->
+			</plugin>
+			<!-- Other plugins -->
 		</plugins>
 	</build>
-
 </project>
