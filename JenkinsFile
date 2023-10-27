@@ -9,9 +9,9 @@ pipeline {
           NEXUS_URL = "192.168.56.2:8081"
           NEXUS_REPOSITORY = "vprofile-release"
   	      NEXUS_REPO_ID   = "vprofile-release"
-          NEXUS_CREDENTIAL_ID = "nexuslogin"
-          ARTVERSION = "${env.BUILD_ID}"
-      }
+
+               }
+
   stages {
     stage("GIT") {
       steps {
@@ -34,40 +34,6 @@ pipeline {
         sh "mvn test -Dtest=tn.esprit.spring.services.SkierServiceImpMock"
       }
     }
-     stage("Publish to Nexus Repository Manager") {
-          steps {
-            script {
-              pom = readMavenPom file: "Spring/pom.xml";
-              filesByGlob = findFiles(glob: "Spring/target/*.${pom.packaging}");
-              echo "${filesByGlob[0].name} ${filesByGlob[0].path} ${filesByGlob[0].directory} ${filesByGlob[0].length} ${filesByGlob[0].lastModified}"
-              artifactPath = filesByGlob[0].path;
-              artifactExists = fileExists artifactPath;
-              if (artifactExists) {
-                echo "*** File: ${artifactPath}, group: ${pom.groupId}, packaging: ${pom.packaging}, version ${VERSION}";
-                nexusArtifactUploader(
-                  nexusVersion: NEXUS_VERSION,
-                  protocol: NEXUS_PROTOCOL,
-                  nexusUrl: NEXUS_URL,
-                  groupId: pom.groupId,
-                  version: VERSION,
-                  repository: NEXUS_REPOSITORY,
-                  credentialsId: NEXUS_CREDENTIAL_ID,
-                  artifacts: [
-                    [artifactId: pom.artifactId,
-                      classifier: '',
-                      file: artifactPath,
-                      type: pom.packaging
-                    ],
-                    [artifactId: pom.artifactId,
-                      classifier: '',
-                      file: "Spring/pom.xml",
-                      type: "pom"
-                    ]
-                  ]
-                );
-              }  }
-              }
-              }
 
 
 
