@@ -43,7 +43,7 @@ public class SkierServiceImpMock {
         skier.setFirstName("FRAY");
         skier.setLastName("MHAMED");
         skier.setDateOfBirth(LocalDate.of(1990, 1, 1));
-        skier.setCity("Tunis");
+        skier.setCity("Hammamaet");
 
         Subscription subscription = new Subscription();
         subscription.setTypeSub(TypeSubscription.ANNUAL);
