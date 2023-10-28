@@ -6,7 +6,7 @@ pipeline {
               NEXUS_VERSION = "nexus3"
               NEXUS_PROTOCOL = "http"
               NEXUS_URL = "192.168.56.2:8081"
-              NEXUS_REPOSITORY = "maven-releases"
+              NEXUS_REPOSITORY = "vprofile-release"
               NEXUS_CREDENTIAL_ID = "NEXUS_CRED"
               DOCKER_CREDENTIAL_ID = "Docker-Creds"
               VERSION = "1.${env.BUILD_NUMBER}"
