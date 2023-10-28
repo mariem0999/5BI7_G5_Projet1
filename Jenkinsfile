@@ -21,6 +21,12 @@ pipeline {
       steps {
         sh "mvn test -Dtest=tn.esprit.spring.services.InstructorServiceImpMock"
       }
+      stage('MVN NEXUS') {
+                  steps {
+                      sh 'mvn deploy';
+                  }
+              }
+
     }
 
 
