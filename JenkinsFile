@@ -38,15 +38,7 @@ pipeline {
       }
     }
 
-stage('MVN NEXUS')
-        {
-        steps {
-        sh 'mvn  deploy -DskipTests  '
-        }
-        }
-       //-DskipTests
 
-  }
 
 
 stage("Publish to Nexus Repository Manager") {
