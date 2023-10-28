@@ -66,8 +66,6 @@ stage("Publish to Nexus Repository Manager") {
                 ]
               ]
             );
-          } else {
-            error "*** File: ${artifactPath}, could not be found";
           }
         }
       }
