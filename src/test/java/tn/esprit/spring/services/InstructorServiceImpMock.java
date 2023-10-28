@@ -37,7 +37,7 @@ public class InstructorServiceImpMock {
     @Test
     public void retrieveInstructor(){
         Mockito.when(instructorRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(instructor));
-        Instructor instructor1=instructorServices.retrieveInstructor(Long.valueOf("1L"));
+        Instructor instructor1=instructorServices.retrieveInstructor(Long.valueOf(1L));
         Assertions.assertNotNull(instructor1);
 
     }
