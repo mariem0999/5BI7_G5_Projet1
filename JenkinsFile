@@ -34,7 +34,7 @@ stage('MVN NEXUS')
         }
 
 
-  }
+
 
    stage("BUILD DOCKER IMAGE") {
         steps {
@@ -57,7 +57,7 @@ stage('MVN NEXUS')
         }
       }
 
-
+}
 
 
 }
