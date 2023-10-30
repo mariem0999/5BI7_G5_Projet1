@@ -1,19 +1,7 @@
 pipeline {
   agent any;
 
-  environment {
 
-              NEXUS_VERSION = "nexus3"
-              NEXUS_PROTOCOL = "http"
-              NEXUS_URL = "192.168.56.2:8081"
-              NEXUS_REPOSITORY = "vprofile-release"
-              NEXUS_CREDENTIAL_ID = "NEXUS_CRED"
-              DOCKER_CREDENTIAL_ID = "Docker-Creds"
-              VERSION = "1.${env.BUILD_NUMBER}"
-
-
-
-               }
 
   stages {
     stage("GIT") {
@@ -47,6 +35,27 @@ stage('MVN NEXUS')
 
 
   }
+
+   stage("BUILD DOCKER IMAGE") {
+        steps {
+          sh 'docker build -t mhamedfray007/gestion-station-ski:latest .'
+        }
+      }
+      stage('Deploy Docker Image') {
+        steps {
+          withCredentials([string(credentialsId: 'pass', variable: 'DOCKER_PASSWORD')]) {
+            sh '''
+              docker login -u mhamedfray007 -p $DOCKER_PASSWORD
+              docker push mhamedfray007/gestion-station-ski
+            '''
+          }
+        }
+      }
+      stage('Docker Compose') {
+        steps {
+          sh 'docker-compose up -d'
+        }
+      }
 
 
 
