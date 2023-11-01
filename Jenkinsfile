@@ -7,10 +7,16 @@ pipeline {
         sh 'git pull origin master'
       }
     }
-    stage("MAVEN BUILD") {
-      steps {
-        sh 'mvn clean install -Dmaven.test.skip=true'
-      }
+    stage('MVN CLEAN') {
+       steps {
+        sh 'mvn clean';
+       }
+    }
+
+    stage('MVN COMPILE') {
+        steps {
+          sh 'mvn compile';
+        }
     }
     stage("SONARQUBE") {
       steps {
