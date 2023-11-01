@@ -29,6 +29,27 @@ pipeline {
        }
      }
 
+     stage("DOCKER IMAGE") {
+        steps {
+          sh 'docker build -t mariemessghaier/gestion-station-ski:latest .'
+        }
+     }
+     stage('DOCKER HUB') {
+        steps {
+          withCredentials([string(credentialsId: 'pass', variable: 'DOCKER_PASSWORD')]) {
+            sh '''
+                   docker login -u mariemessghaier -p $DOCKER_PASSWORD
+                   docker push mariemessghaier/gestion-station-ski
+                 '''
+          }
+        }
+     }
+     stage('Docker-Compose') {
+         steps {
+            sh 'docker-compose up -d'
+         }
+     }
+
 
 
   }
