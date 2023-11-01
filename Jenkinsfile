@@ -20,12 +20,12 @@ pipeline {
     }
     stage("SONARQUBE") {
       steps {
-       sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar"
+       sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar -Dmaven.test.skip=true";
       }
     }
     stage("MOCKITO") {
       steps {
-        sh "mvn test -Dtest=tn.esprit.spring.services.InstructorServiceImpMock"
+        sh "mvn test -Dtest=tn.esprit.spring.services.InstructorServiceImpMock";
       }
     }
 
