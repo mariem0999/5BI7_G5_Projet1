@@ -51,7 +51,7 @@ public class SkierServiceImpMock {
 
         skier.setSubscription(subscription);
 
-        // Mock the repository's save method
+
         when(skierRepository.save(skier)).thenReturn(skier);
 
         Skier result = skierServices.addSkier(skier);
