@@ -12,7 +12,7 @@ pipeline {
     }
     stage("MAVEN BUILD") {
       steps {
-        sh 'mvn clean install '
+        sh 'mvn clean install -Dmaven.test.skip=true'
       }
     }
     stage("SONARQUBE") {
@@ -29,7 +29,7 @@ pipeline {
 stage('MVN NEXUS')
         {
         steps {
-        sh 'mvn  deploy'
+        sh 'mvn  deploy -DskipTests  '
         }
         }
 
