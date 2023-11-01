@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
     networks:
       - springmysql-net
-    env_file: ./.env
+
     ports:
       - 8089:8089
     environment:
