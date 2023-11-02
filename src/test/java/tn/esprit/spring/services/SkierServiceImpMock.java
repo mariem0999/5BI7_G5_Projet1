@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.spring.entities.*;
 import tn.esprit.spring.repositories.ISkierRepository;
-import tn.esprit.spring.repositories.ISubscriptionRepository;
+
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -34,8 +34,7 @@ public class SkierServiceImpMock {
     @Mock
     private ISkierRepository skierRepository;
 
-    @Mock
-    private ISubscriptionRepository subscriptionRepository;
+
 
     @Test
     public void testAddSkier() {
