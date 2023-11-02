@@ -22,4 +22,5 @@ public interface ISubscriptionRepository extends CrudRepository<Subscription, Lo
     List<Subscription> findDistinctOrderByEndDateAsc();
 
 
+    Float recurringRevenueByTypeSubEquals(TypeSubscription typeSubscription);
 }
