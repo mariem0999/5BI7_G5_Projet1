@@ -19,5 +19,7 @@ public interface ISubscriptionServices {
 
 	List<Subscription> retrieveSubscriptionsByDates(LocalDate startDate, LocalDate endDate);
 
+
+	//@Scheduled(cron = "*/30 * * * * *") /* Cron expression to run a job every 30 secondes */
 	void retrieveSubscriptions();
 }
