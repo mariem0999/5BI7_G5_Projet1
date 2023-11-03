@@ -38,7 +38,7 @@ pipeline {
         steps {
           withCredentials([string(credentialsId: 'pass', variable: 'DOCKER_PASSWORD')]) {
             sh '''
-                   docker login -u mariemessghaier -p $DOCKER_PASSWORD
+                   docker login -u mariemessghaier -p docker_099
                    docker push mariemessghaier/gestion-station-ski
                  '''
           }
