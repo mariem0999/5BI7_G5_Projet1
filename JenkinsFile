@@ -38,7 +38,7 @@ stage('MVN NEXUS')
 
    stage("BUILD DOCKER IMAGE") {
         steps {
-          sh 'docker build -t mhamedfray007/gestion-station-ski:latest .'
+          sh 'docker build -t mhamedfray007/mhamedfray-5bi7-g5-gestion-station-ski:latest .'
         }
       }
       stage('Deploy Docker Image') {
@@ -46,7 +46,7 @@ stage('MVN NEXUS')
           withCredentials([string(credentialsId: 'pass', variable: 'DOCKER_PASSWORD')]) {
             sh '''
               docker login -u mhamedfray007 -p $DOCKER_PASSWORD
-              docker push mhamedfray007/gestion-station-ski
+              docker push mhamedfray007/mhamedfray-5bi7-g5-gestion-station-ski
             '''
           }
         }
