@@ -3,9 +3,11 @@ package tn.esprit.spring;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.spring.entities.Course;
 import tn.esprit.spring.repositories.ICourseRepository;
 import tn.esprit.spring.services.CourseServicesImpl;
@@ -17,6 +19,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.verify;
 
+@ExtendWith(MockitoExtension.class)
 public class CourseLS {
 
     @InjectMocks
@@ -66,15 +69,15 @@ public class CourseLS {
         Assert.assertNotNull(result);
     }
 
- /*   @Test
-    public void testDeleteCourse() {
-        Long courseNum = 1L;
+    /*   @Test
+       public void testDeleteCourse() {
+           Long courseNum = 1L;
 
-        courseService.retrieveCourse(courseNum);
+           courseService.retrieveCourse(courseNum);
 
-        verify(courseRepository).deleteById(courseNum);
-    }
-*/
+           verify(courseRepository).deleteById(courseNum);
+       }
+   */
     @Test
     public void testRetrieveCourse() {
         Long courseNum = 1L;
