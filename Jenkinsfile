@@ -44,11 +44,14 @@ pipeline {
           }
         }
      }
-      stage('Docker Compose') {
-         steps {
-            sh 'docker-compose up -d'
-         }
+      stage('Docker-Compose') {
+          steps {
+              dir('D:/WorkIntellij/projet1/docker-compose/directory') {
+                  sh 'docker-compose up -d'
+              }
+          }
       }
+
 
 
 
