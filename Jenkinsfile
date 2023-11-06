@@ -46,11 +46,17 @@ pipeline {
      }
      stage('Docker-Compose') {
          steps {
-            dir('D:/WorkIntellij/projet1/docker-compose/directory') {
-            sh 'docker-compose up -d'
-            }
+
+             git url: 'https://github.com/mariem0999/5BI7_G5_Projet1.git', credentialsId: 'your-credentials-id'
+
+
+             dir('5BI7_G5_Projet1') {
+
+                 sh 'docker-compose up -d'
+             }
          }
      }
+
 
 
 
