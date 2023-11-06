@@ -47,11 +47,6 @@ pipeline {
      stage('Docker-Compose') {
          steps {
 
-             git url: 'https://github.com/mariem0999/5BI7_G5_Projet1.git', credentialsId: 'pass'
-
-
-             dir('5BI7_G5_Projet1') {
-
                  sh 'docker-compose up -d'
              }
          }
