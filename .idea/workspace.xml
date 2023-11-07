@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/CourseLS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push dockerfile 3">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,31 +35,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "LobnaSakli__5BI7__G5",
-    "last_opened_file_path": "C:/work/Workspace/5BI7_G5_Projet1-LobnaSakli_5BI7_G5/5BI7_G5_Projet1-LobnaSakli_5BI7_G5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "979cb177730d39751abecc44667566eb",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LobnaSakli__5BI7__G5&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/Workspace/5BI7_G5_Projet1-LobnaSakli_5BI7_G5/5BI7_G5_Projet1-LobnaSakli_5BI7_G5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.HTTP Request&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;979cb177730d39751abecc44667566eb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.CourseLS (1)">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+      <command value="mvn deploy" />
+      <command value="mvn deploy -X" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CourseLS">
+    <configuration name="All in gestion-station-ski" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gestion-station-ski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CourseLS (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gestion-station-ski" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,8 +139,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CourseLS (1)" />
         <item itemvalue="JUnit.CourseLS" />
+        <item itemvalue="JUnit.All in gestion-station-ski" />
+        <item itemvalue="JUnit.CourseLS (1)" />
         <item itemvalue="TestNG.CourseLS" />
       </list>
     </recent_temporary>
@@ -145,7 +162,17 @@
       <workItem from="1699117267691" duration="1867000" />
       <workItem from="1699119604692" duration="1222000" />
       <workItem from="1699120868965" duration="1663000" />
-      <workItem from="1699122566159" duration="2194000" />
+      <workItem from="1699122566159" duration="10081000" />
+      <workItem from="1699133123175" duration="6296000" />
+      <workItem from="1699210650379" duration="3363000" />
+      <workItem from="1699278830308" duration="5970000" />
+      <workItem from="1699291705290" duration="2005000" />
+      <workItem from="1699294866678" duration="3287000" />
+      <workItem from="1699298863499" duration="7709000" />
+      <workItem from="1699361592760" duration="3734000" />
+      <workItem from="1699368057930" duration="27000" />
+      <workItem from="1699372531900" duration="2346000" />
+      <workItem from="1699377536834" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -163,7 +190,87 @@
       <option name="project" value="LOCAL" />
       <updated>1699122791757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test classe courseLS">
+      <option name="closed" value="true" />
+      <created>1699125059956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125059956</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update dep sql in pom.xml">
+      <option name="closed" value="true" />
+      <created>1699125962359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125962359</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update jacoco">
+      <option name="closed" value="true" />
+      <created>1699133377645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699133377645</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update jacoco">
+      <option name="closed" value="true" />
+      <created>1699134162716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699134162716</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update nexus1">
+      <option name="closed" value="true" />
+      <created>1699303504630</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699303504630</updated>
+    </task>
+    <task id="LOCAL-00008" summary="push jaccoco">
+      <option name="closed" value="true" />
+      <created>1699365302863</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699365302863</updated>
+    </task>
+    <task id="LOCAL-00009" summary="push jaccoco2">
+      <option name="closed" value="true" />
+      <created>1699365505871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699365505871</updated>
+    </task>
+    <task id="LOCAL-00010" summary="push dockerfile">
+      <option name="closed" value="true" />
+      <created>1699373332649</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699373332650</updated>
+    </task>
+    <task id="LOCAL-00011" summary="push dockerfile">
+      <option name="closed" value="true" />
+      <created>1699373360265</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699373360265</updated>
+    </task>
+    <task id="LOCAL-00012" summary="push dockerfile 3">
+      <option name="closed" value="true" />
+      <created>1699374708230</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699374708232</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +295,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="test classe courseLS" />
+    <MESSAGE value="update dep sql in pom.xml" />
+    <MESSAGE value="update jacoco" />
+    <MESSAGE value="update nexus1" />
+    <MESSAGE value="push jaccoco" />
+    <MESSAGE value="push jaccoco2" />
+    <MESSAGE value="push dockerfile" />
+    <MESSAGE value="push dockerfile 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="push dockerfile 3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
