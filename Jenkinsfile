@@ -47,7 +47,7 @@ pipeline {
       stage('Docker-Compose') {
           steps {
               dir('5BI7_G5_Projet1') {
-                  sh 'docker compose up'
+                  sh 'docker-compose up'
               }
           }
       }
