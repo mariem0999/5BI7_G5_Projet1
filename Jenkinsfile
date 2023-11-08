@@ -44,13 +44,11 @@ pipeline {
           }
         }
      }
-      stage('Docker-Compose') {
-          steps {
-              dir('5BI7_G5_Projet1') {
-                  sh 'docker-compose up'
+      stage('Docker Compose') {
+              steps {
+                sh 'docker compose up -d'
               }
-          }
-      }
+            }
 
 
 
