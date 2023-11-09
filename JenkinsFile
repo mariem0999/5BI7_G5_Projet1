@@ -56,6 +56,17 @@ stage('MVN NEXUS')
           sh 'docker-compose up -d'
         }
       }
+      stage('Open HTML Page') {
+                  steps {
+                      script {
+                          if (isUnix()) {
+                              sh 'xdg-open 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport'
+                          } else {
+                              bat 'start 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport'
+                          }
+                      }
+                  }
+              }
 
 }
 
