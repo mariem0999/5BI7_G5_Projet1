@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 8">
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/CourseLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/CourseLS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/CourseLS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/CourseLS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/GestionStationSkiApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +76,7 @@
       <command value="mvn deploy -X" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="JUnit.CourseTest">
     <configuration name="All in gestion-station-ski" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gestion-station-ski" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,6 +109,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gestion-station-ski" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tn.esprit.spring" />
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.CourseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,23 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseLS" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="gestion-station-ski" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tn.esprit.spring.CourseServicesImplTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tn.esprit.spring" />
-      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.CourseLS" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -146,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="JUnit.CourseTest" />
         <item itemvalue="JUnit.CourseLS" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.All in gestion-station-ski" />
         <item itemvalue="JUnit.CourseLS (1)" />
-        <item itemvalue="TestNG.CourseLS" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +188,7 @@
       <workItem from="1699372531900" duration="2346000" />
       <workItem from="1699377536834" duration="2887000" />
       <workItem from="1699474510194" duration="2435000" />
-      <workItem from="1699552084238" duration="5913000" />
+      <workItem from="1699552084238" duration="8974000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -392,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699558210297</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="push docker compose 9">
+      <option name="closed" value="true" />
+      <created>1699560017541</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699560017542</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +450,8 @@
     <MESSAGE value="push docker compose 6" />
     <MESSAGE value="push docker compose 7" />
     <MESSAGE value="push docker compose 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 8" />
+    <MESSAGE value="push docker compose 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
