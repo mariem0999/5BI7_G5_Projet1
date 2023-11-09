@@ -126,7 +126,11 @@
 				</executions>
 
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.2.2</version> <!-- Specify the desired version here -->
+			</plugin>
 
 		</plugins>
 	</build>
