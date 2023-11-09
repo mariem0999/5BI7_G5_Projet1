@@ -44,11 +44,11 @@ pipeline {
           }
         }
      }
-      stage('Docker Compose') {
-              steps {
-                sh 'sudo docker compose up -d'
-              }
-            }
+     stage('Docker COMPOSE'){
+         steps{
+            sh """ docker compose up -d """
+         }
+     }
 
 
 
