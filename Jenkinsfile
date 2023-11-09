@@ -44,13 +44,13 @@ pipeline {
           }
         }
      }
-     stage('Docker COMPOSE'){
-         steps{
-            sh '''
-                   docker compose up -d
-                 '''
-         }
-     }
+     stage('Docker COMPOSE') {
+                 steps {
+                     script {
+                         sh 'docker-compose up'
+                     }
+                 }
+             }
 
 
 
