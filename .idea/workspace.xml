@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 7" />
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +182,7 @@
       <workItem from="1699372531900" duration="2346000" />
       <workItem from="1699377536834" duration="2887000" />
       <workItem from="1699474510194" duration="2435000" />
-      <workItem from="1699552084238" duration="4757000" />
+      <workItem from="1699552084238" duration="5913000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -382,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699557514348</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="push docker compose 8">
+      <option name="closed" value="true" />
+      <created>1699558210296</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1699558210297</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +435,8 @@
     <MESSAGE value="push docker compose 5" />
     <MESSAGE value="push docker compose 6" />
     <MESSAGE value="push docker compose 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 7" />
+    <MESSAGE value="push docker compose 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
