@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push v 1.0.1" />
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push pom.xml conf 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +69,7 @@
       <command value="mvn deploy -X" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CourseLS">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="All in gestion-station-ski" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gestion-station-ski" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,8 +137,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="JUnit.CourseLS" />
         <item itemvalue="JUnit.All in gestion-station-ski" />
         <item itemvalue="JUnit.CourseLS (1)" />
@@ -169,7 +181,9 @@
       <workItem from="1699361592760" duration="3734000" />
       <workItem from="1699368057930" duration="27000" />
       <workItem from="1699372531900" duration="2346000" />
-      <workItem from="1699377536834" duration="891000" />
+      <workItem from="1699377536834" duration="2887000" />
+      <workItem from="1699474510194" duration="2435000" />
+      <workItem from="1699552084238" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -283,7 +297,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699378424023</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="push v 1.0.1  2">
+      <option name="closed" value="true" />
+      <created>1699378501597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699378501597</updated>
+    </task>
+    <task id="LOCAL-00016" summary="push pom.xml conf">
+      <option name="closed" value="true" />
+      <created>1699378804623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699378804624</updated>
+    </task>
+    <task id="LOCAL-00017" summary="push pom.xml conf 2">
+      <option name="closed" value="true" />
+      <created>1699474983198</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699474983199</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +356,10 @@
     <MESSAGE value="push dockerfile 3" />
     <MESSAGE value="push dockerfile 4" />
     <MESSAGE value="push v 1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="push v 1.0.1" />
+    <MESSAGE value="push v 1.0.1  2" />
+    <MESSAGE value="push pom.xml conf" />
+    <MESSAGE value="push pom.xml conf 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="push pom.xml conf 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
