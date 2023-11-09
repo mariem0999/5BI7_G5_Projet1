@@ -60,9 +60,9 @@ stage('MVN NEXUS')
                   steps {
                       script {
                           if (isUnix()) {
-                              sh 'xdg-open 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport'
+                              sh 'xdg-open 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport/index.html'
                           } else {
-                              bat 'start 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport'
+                              bat 'start 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport/index.html'
                           }
                       }
                   }
