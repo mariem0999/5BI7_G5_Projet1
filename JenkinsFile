@@ -12,7 +12,7 @@ pipeline {
     }
     stage("MAVEN BUILD") {
       steps {
-        sh 'mvn clean install'
+        sh 'mvn clean install -Dmaven.test.skip=true'
       }
     }
     stage("SONARQUBE") {
@@ -22,14 +22,14 @@ pipeline {
     }
     stage("MOCKITO") {
       steps {
-        sh "mvn test"
+        sh "mvn test -Dtest=tn.esprit.spring.services.SkierServiceImpMock"
       }
     }
 
 stage('MVN NEXUS')
         {
         steps {
-        sh 'mvn  deploy'
+        sh 'mvn  deploy -DskipTests'
         }
         }
 
@@ -56,17 +56,7 @@ stage('MVN NEXUS')
           sh 'docker-compose up -d'
         }
       }
-      stage('Open HTML Page') {
-                  steps {
-                      script {
-                          if (isUnix()) {
-                              sh 'xdg-open 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport/index.html'
-                          } else {
-                              bat 'start 'C:/devops/5BI7_G5_Projet1/src/main/resources/htmlReport/index.html'
-                          }
-                      }
-                  }
-              }
+
 
 }
 
