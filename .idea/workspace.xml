@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/CourseLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/CourseLS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/CourseLS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/CourseLS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/GestionStationSkiApplicationTests.class" beforeDir="false" />
-    </list>
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push jacoco test unit 10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +178,7 @@
       <workItem from="1699372531900" duration="2346000" />
       <workItem from="1699377536834" duration="2887000" />
       <workItem from="1699474510194" duration="2435000" />
-      <workItem from="1699552084238" duration="8974000" />
+      <workItem from="1699552084238" duration="9359000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -406,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699560017542</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="push jacoco test unit 10">
+      <option name="closed" value="true" />
+      <created>1699563095332</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1699563095332</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +449,8 @@
     <MESSAGE value="push docker compose 7" />
     <MESSAGE value="push docker compose 8" />
     <MESSAGE value="push docker compose 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 9" />
+    <MESSAGE value="push jacoco test unit 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="push jacoco test unit 10" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
