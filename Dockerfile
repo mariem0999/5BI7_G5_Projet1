@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-COPY target/gestion-station-ski-1.0.2.jar /app/app.jar
+COPY target/gestion-station-ski-1.0.3.jar /app/app.jar
 
 EXPOSE 8089
 
