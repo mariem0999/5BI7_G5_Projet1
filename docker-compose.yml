@@ -14,7 +14,7 @@ services:
       - backend-network
 
   spring:
-    image: lobnasakli/gestion-station-ski-1.0.1
+    image: lobnasakli/gestion-station-ski-1.0.1:1.0.1
     ports:
       - "8089:8089"
     environment:
