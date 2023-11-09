@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push pom.xml conf 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="44208fc7-b03c-4a05-abd0-337e3f814557" name="Changes" comment="push docker compose 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +180,7 @@
       <workItem from="1699372531900" duration="2346000" />
       <workItem from="1699377536834" duration="2887000" />
       <workItem from="1699474510194" duration="2435000" />
-      <workItem from="1699552084238" duration="314000" />
+      <workItem from="1699552084238" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
@@ -321,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699474983199</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="push docker compose 1">
+      <option name="closed" value="true" />
+      <created>1699552699656</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699552699657</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +364,8 @@
     <MESSAGE value="push v 1.0.1  2" />
     <MESSAGE value="push pom.xml conf" />
     <MESSAGE value="push pom.xml conf 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="push pom.xml conf 2" />
+    <MESSAGE value="push docker compose 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="push docker compose 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
