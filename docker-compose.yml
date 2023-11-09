@@ -16,7 +16,7 @@ services:
   spring:
     image: lobnasakli/gestion-station-ski:1.0.1
     ports:
-      - "8082:8082"
+      - "8089:8089"
     environment:
       - spring.datasource.url=jdbc:mysql://mysql:3306/stationSki?createDatabaseIfNotExist=true
     volumes:
