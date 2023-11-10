@@ -15,16 +15,17 @@ pipeline {
         sh 'mvn clean install -Dmaven.test.skip=true'
       }
     }
+    stage("MOCKITO") {
+          steps {
+            sh "mvn test -Dtest=tn.esprit.spring.services.SkierServiceImpMock"
+          }
+        }
     stage("SONARQUBE jacoco") {
       steps {
        sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar"
       }
     }
-    stage("MOCKITO") {
-      steps {
-        sh "mvn test -Dtest=tn.esprit.spring.services.SkierServiceImpMock"
-      }
-    }
+
 
 stage('MVN NEXUS')
         {
