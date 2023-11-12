@@ -47,8 +47,8 @@ pipeline {
      stage('Docker COMPOSE') {
           steps {
               script {
-                  sh '/usr/bin/docker-compose -f /D:/WorkIntellij/projet1/docker-compose.yml up'
-                  sh '/usr/bin/docker-compose -f /D:/WorkIntellij/projet1/docker-compose.yml up'
+                  sh 'docker-compose -f /D:/WorkIntellij/projet1/docker-compose.yml up'
+                  sh 'docker-compose -f /D:/WorkIntellij/projet1/docker-compose.yml start'
               }
           }
      }
