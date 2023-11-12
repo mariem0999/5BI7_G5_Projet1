@@ -59,13 +59,16 @@ stage('MVN NEXUS')
       }
       }
        post {
-                      success {
-                          mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "SUCCESS MSG: Project name -> ${env.JOB_NAME}", to: "wael.hcine@esprit.tn";
-                      }
-                      failure {
-                          mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR MSG: Project name -> ${env.JOB_NAME}", to: "wael.hcine@esprit.tn";
-                      }
-                  }
+                               always {
+                                       emailext subject: "Pipeline Failed",
+                                                body: "There was a failure in the pipeline.",
+                                                to: "fraymhamed8@gmail.com",
+                                                from: "fraymhamed8@gmail.com",
+                                                mimeType: 'text/plain',
+                                                attachmentsPattern: 'logs/*.log',
+                                                replyTo: "fraymhamed8@gmail.com"
+                                   }
+                               }
 
                     }
 
