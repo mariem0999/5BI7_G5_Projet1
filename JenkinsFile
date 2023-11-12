@@ -39,7 +39,7 @@ stage('MVN NEXUS')
 
    stage("BUILD DOCKER IMAGE") {
         steps {
-          sh 'docker build -t mhamedfray007/mhamedfray-5bi7-g5-gestion-station-ski:latest .'
+          sh 'docker build -t mhamedfray007/mhamedfray-5bi7-g5-gestion-station-ski:latest  --build-arg JAR_URL=http://192.168.56.2:8081/repository/vprofile-release/tn/esprit/spring/gestion-station-ski/1.0/gestion-station-ski-1.0.jar .'
         }
       }
       stage('Deploy Docker Image') {
