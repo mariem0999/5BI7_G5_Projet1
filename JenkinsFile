@@ -60,7 +60,7 @@ stage('MVN NEXUS')
       }
 
                     post {
-                            failure {
+                            success {
                                 emailext subject: "Pipeline Failed",
                                          body: "There was a failure in the pipeline.",
                                          to: "fraymhamed8@gmail.com",
