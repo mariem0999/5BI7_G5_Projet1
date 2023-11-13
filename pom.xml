@@ -64,7 +64,6 @@
 		</repository>
 	</distributionManagement>
 	<build>
-		<finalName>5bi7-g5-gestion-station-ski</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
