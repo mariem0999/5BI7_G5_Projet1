@@ -46,12 +46,7 @@ pipeline {
      }
      stage('Docker COMPOSE') {
           steps {
-              script {
-                def windowsPath = 'D:/WorkIntellij/projet1/docker-compose.yml'
-                def unixPath = windowsPath.replaceAll('\\', '/')
-                sh "docker compose -f ${unixPath} up"
-                sh "docker compose -f ${unixPath} start"
-              }
+                sh 'docker-compose up -d'
           }
      }
 
