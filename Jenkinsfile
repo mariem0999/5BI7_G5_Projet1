@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage("GIT") {
       steps {
-        sh 'git checkout MariemEssghaier_5BI7_G5'
-        sh 'git pull origin MariemEssghaier_5BI7_G5'
+        sh 'git checkout MariemEssghaier'
+        sh 'git pull origin MariemEssghaier'
       }
     }
     stage("MAVEN BUILD") {
