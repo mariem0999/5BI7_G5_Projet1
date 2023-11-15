@@ -9,11 +9,13 @@ services:
       - "3306:3306"
     volumes:
       - db:/var/lib/mysql
+    networks:
+      - mynetwork
 
   gestion-station-ski:
     depends_on:
       - mysqldb
-    image: mariemessghaier/gestion-station-ski:latest
+    image: selimounis/selimimg:latest
     restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: ""  # Set to an empty string
@@ -21,7 +23,10 @@ services:
       - "8089:8089"
     stdin_open: true
     tty: true
-
+    networks:
+      - mynetwork
 
 volumes:
   db:
+networks:
+  mynetwork:
