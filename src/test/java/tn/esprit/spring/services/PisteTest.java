@@ -7,9 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import src.main.java.tn.esprit.spring.entities.*;
-import src.main.java.tn.esprit.spring.repositories.*;
-import src.main.java.tn.esprit.spring.services.PisteServicesImpl;
+import tn.esprit.spring.entities.*;
+import tn.esprit.spring.repositories.*;
+import tn.esprit.spring.services.PisteServicesImpl;
 import tn.esprit.spring.entities.Piste;
 
 import java.util.ArrayList;
