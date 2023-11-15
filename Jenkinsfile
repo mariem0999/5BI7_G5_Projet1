@@ -53,5 +53,17 @@ pipeline {
      }
 
   }
+  post {
+          always {
+           mail to: 'mariemsgh2@gmail.com',
+       subject: "${currentBuild.currentResult}",
+       body: """
+       project : ${env.JOB_NAME}
+       build number : ${env.BUILD_NUMBER}
+       url : ${env.BUILD_URL}
+       """
+
+          }
+      }
 
 }
