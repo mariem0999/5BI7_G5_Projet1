@@ -1,4 +1,4 @@
-package src.test.java.tn.esprit.spring.services;
+package tn.esprit.spring;
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
