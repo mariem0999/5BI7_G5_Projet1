@@ -30,7 +30,7 @@ networks:
   backend-network:
     driver: bridge
 volumes:
-  angular_data:
+  spring_data:
   mysql_data:
   mysql_config:
-  spring_data:
+  
