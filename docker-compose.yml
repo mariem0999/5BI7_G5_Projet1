@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysql-db:
+    image: mysql:latest
+    container_name: docker-compose-mysql-db
+    networks:
+      - network
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=stationSki
+
+  spring-boot-app:
+    image: selimounis/selimimg
+    container_name: back_container
+    networks:
+      - network
+    ports:
+      - "8089:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://docker-compose-mysql-db:3306/stationSki?&createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+
+networks:
+  network:
