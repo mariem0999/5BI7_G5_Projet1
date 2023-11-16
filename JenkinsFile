@@ -20,7 +20,7 @@ pipeline {
             sh "mvn test -Dtest=tn.esprit.spring.services.SkierServiceImpMock"
           }
         }
-    stage("SONARQUBE JACOCOC") {
+    stage("SONARQUBE JACOCO") {
       steps {
        sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar"
       }
